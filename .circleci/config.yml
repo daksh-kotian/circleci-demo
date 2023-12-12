@@ -1,7 +1,11 @@
 version: 2.1
 
 workflows:
+<<<<<<< HEAD
  
+=======
+  version: 2
+>>>>>>> a75ba1558320602c30d3406df179dd49ed482b53
   testing:
     jobs:
       - runner
@@ -11,4 +15,8 @@ jobs:
     machine: true
     resource_class: daksh-kotian/dk
     steps:
+<<<<<<< HEAD
       - run: google-chrome https://circleci.com/enterprise
+=======
+      - run: open -a firefox https://circleci.com/enterprise
+>>>>>>> a75ba1558320602c30d3406df179dd49ed482b53
