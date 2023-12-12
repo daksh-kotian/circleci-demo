@@ -1,18 +1,12 @@
 version: 2.1
-
 workflows:
-
   testing:
     jobs:
-      - runner
-
+      - runner-test
 jobs:
-  runner:
+  runner-test:
     machine: true
     resource_class: daksh-kotian/dk
     steps:
-
-      - run: google-chrome https://circleci.com/enterprise
-
-      - run: open -a firefox https://circleci.com/enterprise
+      - run: echo "Hi I'm on Runners!"
 
